@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+    <link rel="stylesheet" href="./../css/Formstyle.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./../asset/logo.png" alt="logo" />
+      </div>
+      <div class="header-text">
+        <span class="employee">employee</span>
+        <span class="payroll">payroll</span>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sub-container">
+        <div class="main-title">Employee Payroll form</div>
+        <div class="row name">
+          <div class="title">Name</div>
+          <div class="answer">
+            <input type="text" onchange="Namechange(event)" />
+          </div>
+        </div>
+        <div class="row profile-pic">
+          <div class="title">Profile-pic</div>
+          <div class="answer">
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Profile-pic"
+                id="Profile-pic-1"
+                value="./asset/Ellipse-1.png"
+                onclick="getProfileImage(event)"
+              />
+              <label for="Profile-pic-1" class="label-radio">
+                <img src="./../asset/Ellipse-1.png" alt="" />
+              </label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Profile-pic"
+                id="Profile-pic-2"
+                value="./asset/Ellipse 1.png"
+                onclick="getProfileImage(event)"
+              />
+              <label for="Profile-pic-2" class="label-radio">
+                <img src="./../asset/Ellipse 1.png" alt="" />
+              </label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Profile-pic"
+                id="Profile-pic-3"
+                value="./asset/Ellipse -2.png"
+                onclick="getProfileImage(event)"
+              />
+              <label for="Profile-pic-3" class="label-radio">
+                <img src="./../asset/Ellipse -2.png" alt="" />
+              </label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Profile-pic"
+                id="Profile-pic-4"
+                value="./asset/Ellipse-4.png"
+                onclick="getProfileImage(event)"
+              />
+              <label for="Profile-pic-4" class="label-radio">
+                <img src="./../asset/Ellipse -3.png" alt="" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row Gender">
+          <div class="title">Gender</div>
+          <div class="answer">
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Gender"
+                value="Male"
+                id="Male"
+                onclick="GenderChange(event)"
+              />
+              <label for="Male">Male</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="Gender"
+                value="Female"
+                id="Female"
+                onclick="GenderChange(event)"
+              />
+              <label for="Female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="row Department">
+          <div class="title">Department</div>
+          <div class="answer Department-checkbox">
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                value="Hr"
+                id="Hr"
+                name="Department"
+                onclick="DeptChange(event)"
+              />
+              <label for="Hr">Hr</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                value="Sales"
+                id="Sales"
+                name="Department"
+                onclick="DeptChange(event)"
+              />
+              <label for="Sales">Sales</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                value="Finance"
+                id="Finance"
+                name="Department"
+                onclick="DeptChange(event)"
+              />
+              <label for="Finance">Finance</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                value="Engineer"
+                id="Engineer"
+                name="Department"
+                onclick="DeptChange(event)"
+              />
+              <label for="Engineer">Engineer</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                value="Other"
+                id="Other"
+                name="Department"
+                onclick="DeptChange(event)"
+              />
+              <label for="Other">Other</label>
+            </div>
+          </div>
+        </div>
+        <div class="row salery">
+          <div class="title">Salary</div>
+          <div class="answer">
+            <select
+              name="Salary"
+              id="Salary"
+              onchange="functionSaleryChange()"
+              aria-placeholder="hi"
+            >
+              <option value="1cpa" disabled selected hidden>
+                select from below
+              </option>
+              <option value="1cpa">1CPA</option>
+              <option value="2cpa">2CPA</option>
+              <option value="10cpa">10CPA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row date">
+          <div class="title">Start Date</div>
+          <div class="answer">
+            <input type="date" name="date" id="date" onchange="DateChange()" />
+          </div>
+        </div>
+        <div class="row comments">
+          <div class="title">Notes</div>
+          <div class="answer">
+            <textarea
+              class="textarea"
+              id="comment"
+              name="comment"
+              rows="4"
+              cols="50"
+              onchange="CommentChange()"
+            ></textarea>
+          </div>
+        </div>
+        <div class="button">
+          <button class="cancel-btn btn">cancel</button>
+          <div class="btn-group">
+            <button class="submit-btn btn" onclick="submitClick(event)">
+              submit
+            </button>
+            <button class="reset-btn btn" onclick="resetClick()">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

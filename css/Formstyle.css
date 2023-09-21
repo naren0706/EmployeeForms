@@ -1,0 +1,28 @@
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #BDBDBD;
+    /* box-shadow: 4px 5px 12px 0px rgba(87, 87, 87, 0.5); */
+}
+
+input[type="radio"] {
+    padding: 100px;
+}
+
+select {
+    padding: 5px 10%;
+    /* box-shadow: 4px 5px 12px 0px rgba(87, 87, 87, 0.5); */
+    border: 1px solid #BDBDBD;
+    transition: all 0.3s;
+
+}
+
+select:hover {
+    /* box-shadow: 10px 10px 12px 0px rgba(87, 87, 87, 0.5); */
+}
+
+input[type="date"] {
+    border: 1px solid #BDBDBD;
+    padding: 6px;
+}
