@@ -1,0 +1,26 @@
+[
+  {
+    "profilepic": "./asset/Ellipse -2.png",
+    "name": "naren",
+    "gender": "male",
+    "department": ["Engineer"],
+    "salary": "10cpa",
+    "startDate": "07/06/2002"
+  },
+  {
+    "profilepic": "./asset/Ellipse-1.png",
+    "name": "Priyanka",
+    "gender": "Female",
+    "department": ["Engineer", "Hr"],
+    "salary": "10cpa",
+    "startDate": "12/12/12"
+  },
+  {
+    "profilepic": "./asset/Ellipse -3.png",
+    "name": "nithin",
+    "gender": "male",
+    "department": ["Engineer", "Salse"],
+    "salary": "10cpa",
+    "startDate": "12/12/12"
+  }
+]
